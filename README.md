@@ -59,7 +59,6 @@ dilation = cv2.dilate (edges, kernel, iterations=1)
 ```
 ## Output:
 ![output](./b.png)
-![output](./c.png)
 ![output](./e.png)
 
 
@@ -88,6 +87,8 @@ plt.axis('on')
 plt.show()
 ```
 ## Output:
+![output](./c.png)
+
 ![output](./d.png)
 
 ## Result
