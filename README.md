@@ -38,7 +38,8 @@ from matplotlib import pyplot as plt
 
 
 ### Display the input Image
-```color_image = cv2.imread("MADHAN BABU.P.jpg")
+```Python
+color_image = cv2.imread("MADHAN BABU.P.jpg")
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -47,7 +48,8 @@ cv2.destroyAllWindows()
 ![output](./a.png)
 
 ### Display the Eroded Image
-```color_image = cv2.imread("MADHAN BABU.P.jpg")
+```Python
+color_image = cv2.imread("MADHAN BABU.P.jpg")
 gray_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny (gray_image, 100, 200)
 kernel_size = 5
@@ -62,7 +64,7 @@ dilation = cv2.dilate (edges, kernel, iterations=1)
 
 
 ### Display the Dilated Image
-```
+```Python
 plt.figure(figsize=(15, 10))
 plt.subplot(2, 3, 1)
 plt.imshow(cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB))
